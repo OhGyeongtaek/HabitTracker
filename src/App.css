@@ -21,3 +21,17 @@
   border-radius: 30px;
   background-color: greenyellow;
 }
+
+header{
+  display:flex;
+  padding:10px 20px;
+  background: #ddd;
+}
+
+header strong{
+  display:inline-block;
+  font-size:2rem;
+  padding:20px;
+  background:greenyellow;
+  border-radius: 50px;;
+}
