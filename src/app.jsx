@@ -7,9 +7,9 @@ import HabitForm from './components/habitForm';
 class app extends Component {
   state = {
       habits : [
-          { id: 1, name : "test1", count : 0 },
-          { id: 2, name : "test2", count : 0 },
-          { id: 3, name : "test3", count : 0 }
+          { id: 1, name : "Habit 1", count : 0 },
+          { id: 2, name : "Habit 2", count : 0 },
+          { id: 3, name : "Habit 3", count : 0 }
       ],
       habitsCount : 0
   }
@@ -74,13 +74,12 @@ class app extends Component {
     return (
       <>
         <HabitHeader count={this.state.habitsCount}></HabitHeader>
-        <HabitForm add={this.add}></HabitForm>
+        <HabitForm add={this.add} reset={this.reset}></HabitForm>
         <Habits 
           habits={this.state.habits} 
           plus={this.plus} 
           minus={this.minus} 
           delete={this.delete}></Habits>
-        <button className="reset-habit" onClick={this.reset}>Reset</button>
       </>
     );
   }

@@ -14,12 +14,11 @@ class HabitForm extends PureComponent {
     }
 
     render() {
-        console.log("HabitForm");
-
         return (
-            <form onSubmit={this.onSubmit}>
-                <input type="text" ref={this.inputRef}/>
-                <button onClick={this.add}>add</button>
+            <form onSubmit={this.onSubmit} className="habit-form">
+                <input type="text" ref={this.inputRef} placeholder="습관을 입력해주세요."/>
+                <button onClick={this.add}>추가</button>
+                <button className="reset-habit" onClick={this.props.reset}>Reset</button>
             </form>
         );
     }

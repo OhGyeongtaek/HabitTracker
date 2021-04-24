@@ -2,14 +2,14 @@ import { Component } from 'react';
 
 class HabitHeader extends Component {
     render() {
-        console.log("HabitHeader");
         return (
-            <header>
-                <h1>로고</h1>
-                <h1>Habit Tracker</h1>
-                <strong>
-                    {this.props.count}
-                </strong>
+            <header className="habit-header">
+                <h1>
+                    Habit Tracker : 
+                    <strong>
+                        {this.props.count}
+                    </strong>
+                </h1>
             </header>
         );
     }

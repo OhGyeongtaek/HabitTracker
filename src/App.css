@@ -1,37 +1,97 @@
-.habit {
+.habits {
+  margin:0 auto;
   padding:0;
+  width:60%;
+}
+.habit {
   list-style:none;
+  display: flex;
+  align-items:center;
+  align-content:center;
+  margin:10px 0;
+  border:1px solid #ccc;
+  padding:8px;
 }
-
-.habit-label {
-  font-size:2.5rem;
+.habit .habit-item {
+  width:90%;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: top;
 }
-
+.habit .habit-item-content {
+  width: 80%;
+}
+.habit .habit-item-action {
+  padding:0 8px;
+  width: 20px;
+}
+.habit .habit-item-content .habit-label {
+  padding-top:13px;
+  font-size:2rem;
+  margin:0;
+  display:inline-block;
+}
 .habit-button {
-  font-size:2.5rem;
+  font-size:1.2rem;
   border:none;
   background:none;
 }
 
 .habit-count {
-  font-size: 2.5rem;
-  display:inline-block;
-  padding:8px 20px;
+  display: flex;
   margin:0 10px;
-  border-radius: 30px;
-  background-color: greenyellow;
+  padding:0;
+  color:#666;
+  align-items: center;
+  justify-content: center;
+}
+.habit-count span {
+  display: inline-block;
+  box-sizing: border-box;
+  padding-top:10px;
+  border:1px solid #ccc;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 2rem;
+  width:65px;
+  height:65px;
 }
 
-header{
-  display:flex;
-  padding:10px 20px;
-  background: #ddd;
+.habit-header{
+  border-bottom:1px solid #ddd;
+  text-align:center;
 }
 
-header strong{
+.habit-header strong{
   display:inline-block;
   font-size:2rem;
-  padding:20px;
-  background:greenyellow;
-  border-radius: 50px;;
+  padding:8px;
+  text-align: center;
+}
+
+.habit-form {
+  width:80%;
+  margin:20px auto;
+  text-align: center;
+  vertical-align: top;
+}
+
+.habit-form input {
+  width: 50%;
+  padding:12px;
+  border:1px solid #ccc;
+  border-radius: 5px;
+  font-size:1.2rem;
+}
+
+.habit-form button {
+  vertical-align: top;
+  padding:14px 20px;
+  border: 1px solid #2271b1;
+  border-radius: 5px;
+  font-size:1rem;
+  background-color:#2271b1;
+  color:#fff;
+  font-weight: bold;
+  margin-left:8px;
 }

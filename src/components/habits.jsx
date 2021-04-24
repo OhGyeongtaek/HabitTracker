@@ -3,10 +3,8 @@ import Habit from './habit';
 
 class Habits extends Component {
     render() {
-        console.log("Habits");
-
         return (
-            <ul>
+            <ul className="habits">
                 {
                     this.props.habits.map(
                         habit => <Habit key={habit.id} 
@@ -14,7 +12,7 @@ class Habits extends Component {
                                         onPlus={this.props?.plus}
                                         onMinus={this.props?.minus}
                                         onDelete={this.props?.delete}
-                                    ></Habit>
+                                    />
                     )
                 }
             </ul>
