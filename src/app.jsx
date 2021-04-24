@@ -70,6 +70,7 @@ class app extends Component {
     this.setState({ habits, habitsCount: 0 });
   }
   render() {
+    console.log("HabitHeader");
     return (
       <>
         <HabitHeader count={this.state.habitsCount}></HabitHeader>
